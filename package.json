@@ -11,7 +11,7 @@
     "db:reset:legacy": "dotenv -e .env.local -- npx prisma migrate reset"
   },
   "dependencies": {
-    "@clerk/nextjs": "^5.2.13",
+    "@clerk/nextjs": "^5.7.6",
     "@prisma/client": "^5.18.0",
     "@tailwindcss/container-queries": "^0.1.1",
     "dotenv-cli": "^7.4.2",
@@ -19,7 +19,7 @@
     "lucide-react": "^0.424.0",
     "next": "^15.5.28",
     "react": "^19.3.1",
-    "react-datepicker": "^7.3.0",
+    "react-datepicker": "^7.6.0",
     "react-dom": "^19.3.1",
     "react-resizable": "^3.0.5",
     "zustand": "^4.5.4"
@@ -32,11 +32,15 @@
     "daisyui": "^4.12.10",
     "eslint": "^8",
     "eslint-config-next": "^15.5.28",
-    "postcss": "^8",
+    "postcss": "^8.5.31",
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "prisma": "^5.18.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "overrides": {
+    "js-cookie": "^3.0.8",
+    "postcss": "$postcss"
   }
 }
